@@ -12,7 +12,7 @@
 	<artifactId>soapspring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>soapspring</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Soap Spring API</description>
 
 
 	<properties>
@@ -65,12 +65,6 @@
 				<configuration>
 					<schemaLanguage>WSDL</schemaLanguage>
 					<generatePackage>crcind.wsdl</generatePackage>
-					<schemas>
-						<schema>
-<!--							<url>http://ws.cdyne.com/phoneverify/phoneverify.asmx?wsdl</url>-->
-						</schema>
-					</schemas>
-
 <!--					<schemaDirectory>${project.basedir}/src/main/resources/xsd</schemaDirectory>-->
 					<schemaIncludes>
 						<include>*.wsdl</include>

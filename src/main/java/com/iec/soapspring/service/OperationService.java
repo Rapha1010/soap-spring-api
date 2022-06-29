@@ -10,11 +10,11 @@ public class OperationService extends WebServiceGatewaySupport {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
-    public AddIntegerResponse add(String phoneNumber, String licenseKey){
+    public AddIntegerResponse add(String arg1, String arg2){
         AddInteger request = new AddInteger();
-        request.setArg1(phoneNumber);
-        request.setArg2(licenseKey);
-        logger.info(String.format("Requesting check of Phone Number for %s with license key %s", phoneNumber, licenseKey));
+        request.setArg1(arg1);
+        request.setArg2(arg2);
+        logger.info(String.format("Requesting check of Phone Number for %s with license key %s", arg1, arg2));
 
         AddIntegerResponse response = (AddIntegerResponse) getWebServiceTemplate()
                 .marshalSendAndReceive("https://www.crcind.com/csp/samples/SOAP.Demo.CLS",
@@ -24,11 +24,11 @@ public class OperationService extends WebServiceGatewaySupport {
         return response;
     }
 
-    public DivIntegerResponse div(String phoneNumber, String licenseKey){
+    public DivIntegerResponse div(String arg1, String arg2){
         DivInteger request = new DivInteger();
-        request.setArg1(phoneNumber);
-        request.setArg2(licenseKey);
-        logger.info(String.format("Requesting check of Phone Number for %s with license key %s", phoneNumber, licenseKey));
+        request.setArg1(arg1);
+        request.setArg2(arg2);
+        logger.info(String.format("Requesting check of Phone Number for %s with license key %s", arg1, arg2));
 
         DivIntegerResponse response = (DivIntegerResponse) getWebServiceTemplate()
                 .marshalSendAndReceive("https://www.crcind.com/csp/samples/SOAP.Demo.CLS",
@@ -38,9 +38,9 @@ public class OperationService extends WebServiceGatewaySupport {
         return response;
     }
 
-    public FindPersonResponse findPerson(String phoneNumber){
+    public FindPersonResponse findPerson(String id){
         FindPerson request = new FindPerson();
-        request.setId(phoneNumber);
+        request.setId(id);
 
         FindPersonResponse response = (FindPersonResponse) getWebServiceTemplate()
                 .marshalSendAndReceive("https://www.crcind.com/csp/samples/SOAP.Demo.CLS",

@@ -33,10 +33,10 @@ public class OperationController {
         return response;
     }
 
-    @GetMapping(path = "find-person/{arg1}")
-    public @ResponseBody FindPersonResponse findPerson(@PathVariable String arg1){
+    @GetMapping(path = "find-person/{id}")
+    public @ResponseBody FindPersonResponse findPerson(@PathVariable String id){
         logger.info("Executed divInteger");
-        FindPersonResponse response = opService.findPerson(arg1);
+        FindPersonResponse response = opService.findPerson(id);
         return response;
     }
 }
