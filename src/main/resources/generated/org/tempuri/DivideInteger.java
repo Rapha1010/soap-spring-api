@@ -1,28 +1,32 @@
 //
-// Este arquivo foi gerado pela Arquitetura JavaTM para ImplementaÃ§Ã£o de ReferÃªncia (JAXB) de Bind XML, v2.2.7 
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.8-b130911.1802 
 // Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Todas as modificaÃ§Ãµes neste arquivo serÃ£o perdidas apÃ³s a recompilaÃ§Ã£o do esquema de origem. 
-// Gerado em: 2022.06.25 Ã s 03:28:43 PM BRT 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2022.06.29 às 03:32:59 PM BRT 
 //
 
 
-package crcind.wsdl;
+package org.tempuri;
 
-import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
  * <p>Classe Java de anonymous complex type.
  * 
- * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * 
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="Arg1" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="Arg2" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="Arg1" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="Arg2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,8 +40,8 @@ import javax.xml.bind.annotation.*;
     "arg1",
     "arg2"
 })
-@XmlRootElement(namespace = "http://tempuri.org",name = "DivideInteger")
-public class DivInteger {
+@XmlRootElement(name = "DivideInteger")
+public class DivideInteger {
 
     @XmlElement(name = "Arg1")
     protected String arg1;
@@ -45,11 +49,11 @@ public class DivInteger {
     protected String arg2;
 
     /**
-     * ObtÃ©m o valor da propriedade arg1.
+     * Obtém o valor da propriedade arg1.
      * 
      * @return
      *     possible object is
-     *     {@link Long }
+     *     {@link String }
      *     
      */
     public String getArg1() {
@@ -61,7 +65,7 @@ public class DivInteger {
      * 
      * @param value
      *     allowed object is
-     *     {@link Long }
+     *     {@link String }
      *     
      */
     public void setArg1(String value) {
@@ -69,11 +73,11 @@ public class DivInteger {
     }
 
     /**
-     * ObtÃ©m o valor da propriedade arg2.
+     * Obtém o valor da propriedade arg2.
      * 
      * @return
      *     possible object is
-     *     {@link Long }
+     *     {@link String }
      *     
      */
     public String getArg2() {
@@ -85,7 +89,7 @@ public class DivInteger {
      * 
      * @param value
      *     allowed object is
-     *     {@link Long }
+     *     {@link String }
      *     
      */
     public void setArg2(String value) {

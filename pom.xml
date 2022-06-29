@@ -71,7 +71,7 @@
 						</schema>
 					</schemas>
 
-					<schemaDirectory>${project.basedir}/src/main/resources/crind.xsd</schemaDirectory>
+<!--					<schemaDirectory>${project.basedir}/src/main/resources/xsd</schemaDirectory>-->
 					<schemaIncludes>
 						<include>*.wsdl</include>
 					</schemaIncludes>

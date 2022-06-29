@@ -34,7 +34,7 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
     "addIntegerResult"
 })
-@XmlRootElement(name = "DivideIntegerResponse")
+@XmlRootElement(namespace = "http://tempuri.org",name = "DivideIntegerResponse")
 public class DivIntegerResponse {
 
     @XmlElement(name = "DivideIntegerResult")

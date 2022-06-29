@@ -40,7 +40,7 @@ public class OperationService extends WebServiceGatewaySupport {
 
     public FindPersonResponse findPerson(String phoneNumber){
         FindPerson request = new FindPerson();
-        request.setArg1(phoneNumber);
+        request.setId(phoneNumber);
 
         FindPersonResponse response = (FindPersonResponse) getWebServiceTemplate()
                 .marshalSendAndReceive("https://www.crcind.com/csp/samples/SOAP.Demo.CLS",

@@ -1,27 +1,31 @@
 //
-// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.7 
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementa��o de Refer�ncia (JAXB) de Bind XML, v2.2.8-b130911.1802 
 // Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2022.06.25 às 03:28:43 PM BRT 
+// Todas as modifica��es neste arquivo ser�o perdidas ap�s a recompila��o do esquema de origem. 
+// Gerado em: 2022.06.29 �s 03:32:59 PM BRT 
 //
 
 
 package crcind.wsdl;
 
-import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
  * <p>Classe Java de anonymous complex type.
  * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * <p>O seguinte fragmento do esquema especifica o conte�do esperado contido dentro desta classe.
  * 
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="AddIntegerResult" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="FindPersonResult" type="{http://tempuri.org}Person"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -37,22 +41,30 @@ import javax.xml.bind.annotation.*;
 @XmlRootElement(name = "FindPersonResponse")
 public class FindPersonResponse {
 
-    @XmlElement(name = "FindPersonResult")
-    protected String findPersonResult;
+    @XmlElement(name = "FindPersonResult", required = true)
+    protected Person findPersonResult;
 
     /**
-     * Obtém o valor da propriedade addIntegerResult.
+     * Obt�m o valor da propriedade findPersonResult.
      * 
+     * @return
+     *     possible object is
+     *     {@link Person }
+     *     
      */
-    public String getFindPersonResult() {
+    public Person getFindPersonResult() {
         return findPersonResult;
     }
 
     /**
-     * Define o valor da propriedade addIntegerResult.
+     * Define o valor da propriedade findPersonResult.
      * 
+     * @param value
+     *     allowed object is
+     *     {@link Person }
+     *     
      */
-    public void setFindPersonResult(String value) {
+    public void setFindPersonResult(Person value) {
         this.findPersonResult = value;
     }
 
