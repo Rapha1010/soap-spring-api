@@ -1,7 +1,7 @@
 # Soap Spring API
 
 Comando abaixo foi usando para gerar os stubs de XML para .java <br>
-Comando : 'xjc -d generated crind.xsd'<br><br>
+<b>Comando:</b> 'xjc -d generated crind.xsd'<br><br>
 
 | EndPoint  | Ação |
 | --------------- | --------------- | 
